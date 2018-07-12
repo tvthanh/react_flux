@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import News from './pages/News';
 import Archives from './pages/Archives';
+import Todos from './pages/Todos';
 import Contact from './pages/Contact';
 
 const app = document.getElementById('app');
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path={"/about"} component={About} />
       <Route path={"/news"} component={News} />
       <Route path={"/archives"} component={Archives} />
+      <Route path={"/todos"} component={Todos} />
       <Route path={"/contact"} component={Contact} />
     </Route>
   </Router>,

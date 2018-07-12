@@ -22,6 +22,7 @@ export default class Nav extends React.Component {
     const aboutClass = location.pathname.match(/^\/about/) ? 'active' : '';
     const newsClass = location.pathname.match(/^\/news/) ? 'active' : '';
     const archivesClass = location.pathname.match(/^\/archives/) ? 'active' : '';
+    const todosClass = location.pathname.match(/^\/todos/) ? 'active' : '';
     const contactClass = location.pathname.match(/^\/contact/) ? 'active' : '';
     const navClass = collapsed ? 'collapse' : '';
 
@@ -50,6 +51,9 @@ export default class Nav extends React.Component {
               </li>
               <li class={archivesClass}>
                 <Link to={"/archives"} onClick={this.toggleCollapse.bind(this)}>Archives</Link>
+              </li>
+              <li class={todosClass}>
+                <Link to={"/todos"} onClick={this.toggleCollapse.bind(this)}>Todos</Link>
               </li>
               <li class={contactClass}>
                 <Link to={"/contact"} onClick={this.toggleCollapse.bind(this)}>Contact</Link>
